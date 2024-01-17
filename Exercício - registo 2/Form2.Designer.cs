@@ -30,6 +30,8 @@
         {
             listBox1 = new ListBox();
             label1 = new Label();
+            btnmostrarregistos = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // listBox1
@@ -52,12 +54,34 @@
             label1.TabIndex = 1;
             label1.Text = "Utilizadores Registados:";
             // 
+            // btnmostrarregistos
+            // 
+            btnmostrarregistos.Location = new Point(536, 317);
+            btnmostrarregistos.Name = "btnmostrarregistos";
+            btnmostrarregistos.Size = new Size(134, 97);
+            btnmostrarregistos.TabIndex = 2;
+            btnmostrarregistos.Text = "Mostrar Registos";
+            btnmostrarregistos.UseVisualStyleBackColor = true;
+            btnmostrarregistos.Click += button1_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(536, 65);
+            button1.Name = "button1";
+            button1.Size = new Size(134, 86);
+            button1.TabIndex = 3;
+            button1.Text = "Fechar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(btnmostrarregistos);
             Controls.Add(label1);
             Controls.Add(listBox1);
             Name = "Form2";
@@ -71,5 +95,7 @@
 
         private ListBox listBox1;
         private Label label1;
+        private Button btnmostrarregistos;
+        private Button button1;
     }
 }

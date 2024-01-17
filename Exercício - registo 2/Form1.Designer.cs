@@ -55,9 +55,9 @@
             Gmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Gmail.Location = new Point(323, 124);
             Gmail.Name = "Gmail";
-            Gmail.Size = new Size(54, 21);
+            Gmail.Size = new Size(51, 21);
             Gmail.TabIndex = 1;
-            Gmail.Text = "Gmail:";
+            Gmail.Text = "Email:";
             // 
             // Password
             // 

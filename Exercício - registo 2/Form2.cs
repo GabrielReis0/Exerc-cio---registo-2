@@ -6,23 +6,32 @@ namespace Exercício___registo_2
 {
     public partial class Form2 : Form
     {
-        private List<Utilizador> utilizadores;
-        public Form2(List<Utilizador> utilizadores)
+        public Form2()
         {
             InitializeComponent();
-            this.utilizadores = utilizadores;   
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        public void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+
+        public void Form2_Load(object sender, EventArgs e)
         {
-            foreach (Utilizador util in utilizadores)
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (Utilizador utilizador in Utilizador.listautilizadores) 
             {
-                listBoxUtilizadores.Items.Add(util.Nome);
+                listBox1.Items.Add(utilizador.Nome);
             }
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
